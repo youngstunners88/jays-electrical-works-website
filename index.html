@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jays Electrical Works | Electrician in Columbus, OH</title>
+    <meta name="description" content="Jays Electrical Works — trusted electrician in Columbus, OH since 1991. Family-owned &amp; fully insured. Call (614) 957-9641 for a free estimate.">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --primary-dark: #b45309;
+            --accent: #fcd34d;
+            --text-dark: #1c1207;
+            --text-light: #78716c;
+            --bg: #ffffff;
+            --bg-section: #fffbeb;
+            --border: #fde68a;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lato', sans-serif; color: var(--text-dark); background: var(--bg); line-height: 1.7; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; line-height: 1.2; }
+        nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(28,18,7,0.97); backdrop-filter: blur(12px); border-bottom: 3px solid var(--primary); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+        .nav-inner { max-width: 1280px; margin: 0 auto; padding: 0.9rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; }
+        .logo span { color: #fff; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: #d4c5a9; font-weight: 600; font-size: 0.85rem; transition: color 0.2s; text-transform: uppercase; letter-spacing: 0.08em; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-cta { background: var(--primary) !important; color: var(--text-dark) !important; padding: 0.55rem 1.4rem; border-radius: 4px; transition: all 0.2s !important; }
+        .nav-cta:hover { background: var(--accent) !important; transform: translateY(-1px); }
+        .hero { min-height: 100vh; background: linear-gradient(160deg, #1c1207 0%, #2d1f08 40%, #3d2a0a 100%); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 9rem 2rem 5rem; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 80%, rgba(245,158,11,0.25) 0%, transparent 60%); pointer-events: none; }
+        .hero-diagonal { position: absolute; top: 0; right: 0; width: 45%; height: 100%; background: linear-gradient(160deg, transparent 0%, rgba(245,158,11,0.08) 100%); clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); }
+        .hero-inner { max-width: 1280px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary); color: var(--text-dark); padding: 0.4rem 1.2rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'Oswald', sans-serif; }
+        .hero h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 700; line-height: 1.0; max-width: 800px; text-transform: uppercase; margin-bottom: 1rem; }
+        .hero h1 span { color: var(--primary); display: block; }
+        .hero-tagline { font-size: clamp(1rem, 2vw, 1.25rem); color: #d4c5a9; max-width: 520px; margin-bottom: 2.5rem; font-weight: 300; letter-spacing: 0.03em; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2.2rem; border-radius: 4px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.25s; font-family: 'Oswald', sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }
+        .btn-primary { background: var(--primary); color: var(--text-dark); box-shadow: 0 4px 20px rgba(245,158,11,0.35); }
+        .btn-primary:hover { transform: translateY(-3px); background: var(--accent); box-shadow: 0 12px 35px rgba(245,158,11,0.5); }
+        .btn-ghost { border: 2px solid rgba(255,255,255,0.4); color: #fff; background: transparent; }
+        .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+        .btn-cta { background: var(--primary); color: var(--text-dark); box-shadow: 0 4px 20px rgba(245,158,11,0.35); }
+        .btn-cta:hover { background: var(--accent); transform: translateY(-3px); }
+        .stats-bar { background: var(--primary); color: var(--text-dark); padding: 2.5rem 2rem; }
+        .stats-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; }
+        .stat { text-align: center; }
+        .stat-num { font-family: 'Oswald', sans-serif; font-size: 3rem; font-weight: 700; color: var(--text-dark); line-height: 1; }
+        .stat-label { font-size: 0.8rem; color: #5c3d02; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem; font-weight: 700; }
+        section { padding: 5rem 2rem; }
+        .container { max-width: 1280px; margin: 0 auto; }
+        .section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary-dark); margin-bottom: 0.5rem; font-family: 'Oswald', sans-serif; }
+        .section-title { margin-bottom: 3.5rem; }
+        .section-title h2 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: var(--text-dark); margin-bottom: 0.6rem; text-transform: uppercase; }
+        .section-title p { color: var(--text-light); font-size: 1.05rem; max-width: 560px; }
+        .section-title.center { text-align: center; }
+        .section-title.center p { margin: 0 auto; }
+        .services-section { background: var(--text-dark); }
+        .services-section .section-title h2 { color: #fff; }
+        .services-section .section-title p { color: #a89880; }
+        .services-section .section-label { color: var(--primary); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; }
+        .service-card { padding: 2.2rem 2rem; transition: transform 0.3s, box-shadow 0.3s; background: #2a1f0e; overflow: hidden; border-top: 4px solid var(--primary); border-radius: 0 0 12px 12px; }
+        .service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,0.4); }
+        .service-icon { width: 56px; height: 56px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 1.2rem; }
+        .service-card h3 { font-size: 1.2rem; margin-bottom: 0.6rem; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: 0.05em; }
+        .service-card p { font-size: 0.92rem; line-height: 1.6; color: #a89880; }
+        .about-section { background: var(--bg-section); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+        .about-visual { background: linear-gradient(135deg, var(--text-dark) 0%, #3d2a0a 100%); border-radius: 12px; min-height: 480px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .about-visual::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; border-radius: 50%; background: rgba(245,158,11,0.12); }
+        .about-visual-icon { font-size: 7rem; color: var(--primary); position: relative; z-index: 1; }
+        .about-content { padding: 1rem 0; }
+        .about-content h2 { font-size: clamp(1.7rem,3vw,2.5rem); margin-bottom: 1rem; text-transform: uppercase; }
+        .about-content > p { color: var(--text-light); margin-bottom: 2rem; font-size: 1.05rem; }
+        .about-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+        .about-list li { display: flex; align-items: center; gap: 0.9rem; font-weight: 600; font-size: 0.97rem; text-transform: uppercase; letter-spacing: 0.04em; font-family: 'Oswald', sans-serif; }
+        .about-list li i { color: var(--primary); font-size: 1rem; width: 20px; flex-shrink: 0; }
+        .process-section { background: #fff; }
+        .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .process-step { text-align: center; padding: 2.5rem 1.5rem; background: var(--bg-section); border-radius: 8px; position: relative; border-bottom: 4px solid var(--primary); }
+        .step-number { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: var(--primary); color: var(--text-dark); width: 36px; height: 36px; border-radius: 4px; font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; }
+        .step-icon { font-size: 2.5rem; color: var(--primary-dark); margin: 1rem 0; }
+        .process-step h3 { font-size: 1.1rem; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .process-step p { color: var(--text-light); font-size: 0.92rem; }
+        .testimonials-section { background: var(--bg-section); }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .testimonial-card { background: #fff; border-radius: 8px; padding: 2rem; border-left: 4px solid var(--primary); box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+        .stars { display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-size: 1.1rem; margin-bottom: 1rem; }
+        .rating-text { font-weight: 700; color: var(--text-dark); font-family: 'Oswald', sans-serif; }
+        .testimonial-card p { color: var(--text-light); font-style: italic; margin-bottom: 1.2rem; line-height: 1.7; }
+        .reviewer { font-weight: 700; font-size: 0.9rem; font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+        .verified { color: var(--primary-dark); font-weight: 500; font-size: 0.8rem; }
+        .cta-section { background: var(--primary); color: var(--text-dark); text-align: center; padding: 6rem 2rem; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 80%, rgba(245,158,11,0.25) 0%, transparent 60%); }
+        .cta-section h2 { font-size: clamp(2rem, 5vw, 3.8rem); margin-bottom: 1rem; position: relative; text-transform: uppercase; }
+        .cta-section p { opacity: 0.8; font-size: 1.15rem; margin-bottom: 2.5rem; position: relative; }
+        .cta-section .btn { position: relative; }
+        .btn-dark { background: var(--text-dark); color: var(--primary); }
+        .btn-dark:hover { background: #000; transform: translateY(-3px); }
+        .cta-phone { margin-top: 2rem; font-size: 1.05rem; opacity: 0.7; position: relative; font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; }
+        footer { background: var(--text-dark); color: #a89880; padding: 3rem 2rem; text-align: center; border-top: 3px solid var(--primary); }
+        .footer-links { display: flex; justify-content: center; gap: 2.5rem; list-style: none; margin-bottom: 2rem; flex-wrap: wrap; }
+        .footer-links a { color: #a89880; text-decoration: none; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.07em; font-family: 'Oswald', sans-serif; }
+        .footer-links a:hover { color: var(--primary); }
+        footer p { font-size: 0.85rem; }
+        .footer-name { color: var(--primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem; font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; }
+        .demo-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999; background: #1c1207; color: #fff; text-align: center; padding: 0.75rem 1rem; font-size: 0.88rem; border-top: 2px solid var(--primary); }
+        .demo-banner strong { color: var(--primary); }
+        @media (max-width: 768px) { .about-grid, .process-grid { grid-template-columns: 1fr; } .nav-links { display: none; } .about-visual { min-height: 220px; } .about-visual-icon { font-size: 4rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="logo">Jays <span>Electrical Works</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-cta">Free Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-diagonal"></div>
+        <div class="hero-inner">
+            <div class="hero-badge"><i class="fas fa-certificate"></i> Licensed Master Electrician</div>
+            <h1>Jays Electrical <span>Works</span></h1>
+            <p class="hero-tagline">Powering Homes &amp; Businesses in Columbus, OH since 1991. Family-owned, fully insured, always affordable.</p>
+            <div class="hero-actions">
+                <a href="tel:+16149579641" class="btn btn-primary"><i class="fas fa-phone"></i> Call (614) 957-9641</a>
+                <a href="#services" class="btn btn-ghost"><i class="fas fa-bolt"></i> Our Services</a>
+            </div>
+        </div>
+    </section>
+    <div class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat"><div class="stat-num">34+</div><div class="stat-label">Years in Business</div></div>
+            <div class="stat"><div class="stat-num">5000+</div><div class="stat-label">Jobs Completed</div></div>
+            <div class="stat"><div class="stat-num">4.8&#9733;</div><div class="stat-label">Average Rating</div></div>
+            <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Fully Insured</div></div>
+        </div>
+    </div>
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title center"><div class="section-label">What We Do</div><h2>Our Electrical Services</h2><p style="color:#a89880">Complete electrical solutions for residential and commercial clients, delivered with precision.</p></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fas fa-bolt"></i></div><h3>Electrical Repairs</h3><p>Fast, reliable fault-finding and repairs for any electrical issue in your home or business.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-table-cells"></i></div><h3>Panel Upgrades</h3><p>Safe panel replacements and service upgrades to meet modern power demands.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-lightbulb"></i></div><h3>Lighting Installation</h3><p>Recessed can lights, ceiling fans, fixtures, and full lighting design installed right.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-plug"></i></div><h3>Wiring Services</h3><p>New builds, basement rewires, room additions, knob-and-tube, and full rewiring jobs.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div><h3>Generator Install</h3><p>Whole-home and standby generator installations — stay powered when the grid goes down.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-house-signal"></i></div><h3>Smart Home Wiring</h3><p>Smart switches, EV charger outlets, outlets, and connected home electrical work.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual"><div class="about-visual-icon"><i class="fas fa-bolt"></i></div></div>
+                <div class="about-content">
+                    <div class="section-label">About Us</div>
+                    <h2>Columbus's Trusted Electrician Since 1991</h2>
+                    <p>Jays Electrical Works has been a family-owned staple in Columbus, OH for over three decades. From simple repairs to full rewires, we bring honest pricing and quality workmanship to every job.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Family Owned &amp; Operated Since 1991</li>
+                        <li><i class="fas fa-check"></i> 34+ Years of Columbus Experience</li>
+                        <li><i class="fas fa-check"></i> Licensed &amp; Fully Insured</li>
+                        <li><i class="fas fa-check"></i> Free Estimates — No Obligation</li>
+                        <li><i class="fas fa-check"></i> Most Affordable Rates in Columbus</li>
+                        <li><i class="fas fa-check"></i> Residential &amp; Small Commercial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-title center"><div class="section-label">How It Works</div><h2>Getting Started Is Simple</h2><p>Three steps to safe, professional electrical work.</p></div>
+            <div class="process-grid">
+                <div class="process-step"><div class="step-number">1</div><div class="step-icon"><i class="fas fa-phone"></i></div><h3>Call For a Quote</h3><p>Reach out for a fast, free estimate. We respond quickly and keep things simple.</p></div>
+                <div class="process-step"><div class="step-number">2</div><div class="step-icon"><i class="fas fa-calendar-check"></i></div><h3>Schedule the Job</h3><p>We work around your schedule — including weekday and flexible appointment times.</p></div>
+                <div class="process-step"><div class="step-number">3</div><div class="step-icon"><i class="fas fa-bolt"></i></div><h3>We Get It Done</h3><p>Our experienced crew arrives on time and completes every job to code, safely and cleanly.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="testimonials-section">
+        <div class="container">
+            <div class="section-title center"><div class="section-label">Customer Reviews</div><h2>What Columbus Customers Say</h2><p>Real results from real Columbus homeowners and businesses.</p></div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card"><div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-text">5.0</span></div><p>"Jay showed up on time, diagnosed the problem fast, and fixed it for half what another company quoted. Honest, skilled, and professional."</p><div class="reviewer">— Marcus H. <span class="verified">&#10003; Verified Customer</span></div></div>
+                <div class="testimonial-card"><div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-text">5.0</span></div><p>"Been using Jays Electrical for years. Full basement rewire, panel swap, can lights — all done right. Best electrician in Columbus, no contest."</p><div class="reviewer">— Sandra K. <span class="verified">&#10003; Verified Customer</span></div></div>
+                <div class="testimonial-card"><div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rating-text">5.0</span></div><p>"Family-owned and it shows. Jay treats your home like his own. Won't use anyone else for electrical work in Columbus."</p><div class="reviewer">— Derek M. <span class="verified">&#10003; Verified Customer</span></div></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="cta-section">
+        <h2>Ready to Power Up?</h2>
+        <p>Contact Jays Electrical Works today for your free, no-obligation estimate.</p>
+        <a href="tel:+16149579641" class="btn btn-dark"><i class="fas fa-phone"></i> Call Now: (614) 957-9641</a>
+        <p class="cta-phone"><i class="fas fa-map-marker-alt"></i> 1171 N Hague Ave, Columbus, OH 43204</p>
+    </section>
+    <footer>
+        <ul class="footer-links"><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#process">How It Works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>
+        <p class="footer-name">Jays Electrical Works</p>
+        <p>1171 N Hague Ave, Columbus, OH 43204</p>
+        <p style="margin-top: 0.5rem;">&copy; 2026 Jays Electrical Works. All Rights Reserved.</p>
+    </footer>
+    <div class="demo-banner">&#9889; <strong>DEMO SITE</strong> — This professional website was built for <strong>Jays Electrical Works</strong> in Columbus, OH. Claim it today!</div>
+</body>
+</html>
